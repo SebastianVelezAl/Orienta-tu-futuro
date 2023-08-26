@@ -13,6 +13,10 @@ body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
+.inactive {
+  display: none;
+
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,11 +26,11 @@ nav {
 .menu {
   display: none;
 }
-.logo {
+.logo-index {
   width: 50px;
   height: 50px;
 }
-.login{
+.call-login{
         width: 50px;
         height: 50px;
     
@@ -66,6 +70,101 @@ nav {
 }
 
 
+
+/*Estilo pie de pagina*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/*Estilo de login*/
+    .logo{
+      width: 70px;
+      height: 70px;
+      justify-content: center;
+    }
+
+    .login {
+      height: 60vh;
+      display: grid;
+      place-items: center;
+      background-color: #ffffff;
+      width: 400px;
+    }
+
+    .form-container-login {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background-color: var(--white);        
+      width: 360px;
+      padding: 0 25px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form a {
+      color: var(--hospital-green);
+      font-size: var(--sm);
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 52px;
+    }
+    .label {
+      font-size: var(--sm);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .input {
+      background-color: var(--text-input-field);
+      border: none;
+      border-radius: 8px;
+      height: 30px;
+      font-size: var(--md);
+      padding: 6px;
+      margin-bottom: 12px;
+    }
+    .input-email {
+      margin-bottom: 22px;
+    }
+    .primary-button {
+      background-color: var(--hospital-green);
+      border-radius: 8px;
+      border: none;
+      color: var(--white);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+    }
+    .secondary-button {
+      background-color: var(--white);
+      border-radius: 8px;
+      border: 1px solid var(--hospital-green);
+      color: var(--hospital-green);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+    }
+    .login-button {
+      margin-top: 14px;
+      margin-bottom: 30px;
+    }
+
+ 
 @media (max-width: 640px) {
   .menu {
     display: block;
@@ -73,19 +172,8 @@ nav {
   .navbar-left ul {
     display: none;
   }
-  .navbar-email {
-    display: none;
+  .logo {
+    display: block;
   }
-}
 
-
-/*Estilo pie de pagina*/
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
